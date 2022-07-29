@@ -12,6 +12,10 @@
 		"answer": "Upper-year residence will not be offered for the 2022-23 academic year.\nUpper-year and graduate students can check the University-owned apartments. Married students or students with families are not eligible for residence and should contact Platt's Lane Estates.\nOur Off-Campus Housing website is the most popular site that Western students use to find housing off campus.  "
 	},
 	{
+		"question": "How much do I actually owe?",
+		"answer": "You can view your residence fees by logging into your Student Center and viewing your Statement of Account. You are able to check the amount required *including* OSAP by clicking on the button named, 'What do I owe in addition to OSAP?'. This is the amount required for the first installation."
+	},
+	{
 		"question": "How do I pay my residence fees?",
 		"answer": "Residence and Tuition fees will be provided on one Statement of Account in your Student Center. Payments toward your Statement of Account should be made to the Office of the Registrar. Please follow the payment methods listed on the Office of the Registrar’s website."
 	},
@@ -73,7 +77,7 @@
 	},
 	{
 		"question": "Can I request a roommate?",
-		"answer": "You may request one roommate in any style of building (first-year students). You will be placed with a requested roommate provided that:\n\nYou both receive residence offers, submit your Residence prepayment and complete your Residence Placement Questionnaires before the deadline.\nYou both join the same roommate group in the myHousing Portal. Depending which roommate sends the request, please ensure you return to the “Roommate Groups” section in your residence application to accept the request to join the roommate group. This will confirm the creation of the roommate group.\nYou both rank your preferences identically. Please note: You and your requested roommate must be in the same faculty/program in order to be placed together on a faculty-based Living-Learning Community floor.\nYou have both received at least your first dose of the COVID vaccine prior to move-in (for 2021-22 academic year).\n\nMany students do not choose a roommate and are matched with a roommate based on the applicable information they provide. Roommate requests are given the highest priority above all other requests."
+		"answer": "You may request one roommate in any style of building (first-year students). You will be placed with a requested roommate provided that:\n\n> You both receive residence offers, submit your Residence prepayment and complete your Residence Placement Questionnaires before the deadline.\n\n> You both join the same roommate group in the myHousing Portal. Depending which roommate sends the request, please ensure you return to the “Roommate Groups” section in your residence application to accept the request to join the roommate group. This will confirm the creation of the roommate group.\n\n> You both rank your preferences identically. Please note: You and your requested roommate must be in the same faculty/program in order to be placed together on a faculty-based Living-Learning Community floor.\n\n> You have both received at least your first dose of the COVID vaccine prior to move-in (for 2021-22 academic year).\n\nMany students do not choose a roommate and are matched with a roommate based on the applicable information they provide. Roommate requests are given the highest priority above all other requests."
 	},
 	{
 		"question": "What if I don't know anyone to request as my roommate?",

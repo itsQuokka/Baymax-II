@@ -1,4 +1,4 @@
-const { EmbedBuilder, Collection, PermissionsBitField } = require('discord.js');
+const { EmbedBuilder, Collection, PermissionsBitField, ApplicationCommandType } = require('discord.js');
 const cooldown = new Collection();
 const ms = require('ms');
 
@@ -30,12 +30,12 @@ client.on('interactionCreate', async (interaction) => {
 	if (!interaction.type == 2) return;
 
 	if (!slashCommand) return client.slashCommands.delete(interaction.commandName);
+
 	try {
 		if (slashCommand.cooldown) {
 			if (cooldown.has(`slash-${slashCommand.name}${interaction.user.id}`))
 				return interaction.reply({ content: `You are on \`${ms(cooldown.get(`slash-${slashCommand.name}${interaction.user.id}`) - Date.now(), { long: true })}\` cooldown!` });
 			if (slashCommand.userPerms || slashCommand.botPerms) {
-				//console.log(slashCommand.botPerms,  interaction.guild.members.cache.get(client.user.id).permissions.has(PermissionsBitField.resolve(slashCommand.botPerms || [])) )
 				if (!interaction.memberPermissions.has(PermissionsBitField.resolve(slashCommand.userPerms || []))) {
 					const userPerms = new EmbedBuilder().setDescription(`🚫 ${interaction.user}, You don't have \`${slashCommand.userPerms}\` permissions to use this command!`).setColor('Red');
 					return interaction.reply({ embeds: [userPerms] });
@@ -62,6 +62,14 @@ client.on('interactionCreate', async (interaction) => {
 					return interaction.reply({ embeds: [botPerms] });
 				}
 			}
+
+			if (slashCommand.moderator === 1) {
+				if (!interaction.member.roles.cache.find((r) => r.id === '1001363252518862865')) {
+					const userPerms = new EmbedBuilder().setDescription(`🚫 ${interaction.user}, You don't have the permissions to use this command!`).setColor('Red');
+					return interaction.reply({ embeds: [userPerms] });
+				}
+			}
+
 			await slashCommand.run(client, interaction);
 		}
 	} catch (error) {

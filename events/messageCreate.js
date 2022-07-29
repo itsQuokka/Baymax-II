@@ -1,5 +1,5 @@
 const client = require('..');
-const { EmbedBuilder, Collection, PermissionsBitField } = require('discord.js');
+const { EmbedBuilder, Collection, PermissionsBitField, MessageType } = require('discord.js');
 const ms = require('ms');
 const prefix = client.prefix;
 const cooldown = new Collection();

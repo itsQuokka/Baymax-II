@@ -27,6 +27,7 @@ module.exports = (client) => {
 				type: slashCommand.type,
 				options: slashCommand.options ? slashCommand.options : null,
 				default_permission: slashCommand.default_permission ? slashCommand.default_permission : null,
+				moderator: 0,
 				default_member_permissions: slashCommand.default_member_permissions ? PermissionsBitField.resolve(slashCommand.default_member_permissions).toString() : null,
 			});
 

@@ -11,11 +11,12 @@ module.exports = {
 			.setOptions(
 				new SelectMenuOptionBuilder({
 					label: `🎨 Arts and Humanities`,
+					description: `Current Enrolled Students: ${(await interaction.guild.roles.cache.find((r) => r.name === 'Arts and Humanities')).members.size}`,
 					value: `Arts and Humanities`,
 				}),
 				new SelectMenuOptionBuilder({
 					label: `👔 Business`,
-					value: `Business`,
+					value: `Current Enrolled Students: 2`,
 				}),
 				new SelectMenuOptionBuilder({
 					label: `💻 Computer Science`,

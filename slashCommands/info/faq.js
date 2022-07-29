@@ -22,7 +22,6 @@ module.exports = {
 
 		if (typing.length > 0) {
 			let keys = Object.keys(data).filter((key) => key.includes(`${typing}`) > -1);
-
 			let index = 0;
 			keys.forEach((key) => {
 				if (data[key].question.toLowerCase().includes(`${typing}`)) {
@@ -64,7 +63,7 @@ module.exports = {
 			if (data[key].question.toLowerCase() === question.toLowerCase()) {
 				const embed = new EmbedBuilder()
 					.setColor('#71368A')
-					.setTitle(`FAQ'`)
+					.setTitle(`FAQ`)
 					.setDescription(
 						`${
 							data[key].answer.length > 4096
@@ -74,7 +73,9 @@ module.exports = {
 					)
 					.setFooter({ text: 'Baymax II • 2022' });
 
-				interaction.reply({ embeds: [embed] });
+				try {
+					interaction.reply({ embeds: [embed] });
+				} catch (err) {}
 			}
 		});
 	},

@@ -15,7 +15,7 @@ module.exports = {
 				}),
 				new SelectMenuOptionBuilder({
 					label: `🖍️ Creations`,
-					value: `Creations`,
+					value: `Creatives`,
 				}),
 				new SelectMenuOptionBuilder({
 					label: `🖱️ Gaming`,

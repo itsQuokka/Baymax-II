@@ -3,9 +3,7 @@ const chalk = require('chalk');
 
 client.on('ready', () => {
 	const activities = [
-		{ name: `${client.guilds.cache.size} Servers`, type: 2 }, // LISTENING
 		{ name: `${client.users.cache.size} Users`, type: 3 }, // WATCHING
-		{ name: `with Discord v14!`, type: 5 }, // COMPETING
 	];
 	const status = ['online', 'dnd', 'idle'];
 	let i = 0;

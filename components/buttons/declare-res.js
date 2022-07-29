@@ -11,47 +11,47 @@ module.exports = {
 			.setOptions(
 				new SelectMenuOptionBuilder({
 					label: `Delaware Hall`,
-					value: `Delaware Hall`,
+					value: `Delaware`,
 				}),
 				new SelectMenuOptionBuilder({
 					label: `Med-Syd Hall`,
-					value: `ed-Syd Hall`,
+					value: `Med-Syd`,
 				}),
 				new SelectMenuOptionBuilder({
 					label: `Saugeen Hall`,
-					value: `Saugeen Hall`,
+					value: `Saugeen`,
 				}),
 				new SelectMenuOptionBuilder({
 					label: `Alumni House`,
-					value: `Alumni House`,
+					value: `Alumni`,
 				}),
 				new SelectMenuOptionBuilder({
 					label: `Elgin Hall`,
-					value: `Elgin Hall`,
+					value: `Elgin`,
 				}),
 				new SelectMenuOptionBuilder({
 					label: `Essex Hall`,
-					value: `Essex Hall`,
+					value: `Essex`,
 				}),
 				new SelectMenuOptionBuilder({
 					label: `Lambton Hall`,
-					value: `Lambton Hall`,
+					value: `Lambton`,
 				}),
 				new SelectMenuOptionBuilder({
 					label: `London Hall`,
-					value: `London Hall`,
+					value: `London`,
 				}),
 				new SelectMenuOptionBuilder({
 					label: `Bayfield Hall`,
-					value: `Bayfield Hall`,
+					value: `Bayfield`,
 				}),
 				new SelectMenuOptionBuilder({
 					label: `Ontario Hall`,
-					value: `Ontario Hall`,
+					value: `Ontario`,
 				}),
 				new SelectMenuOptionBuilder({
 					label: `Perth Hall`,
-					value: `Perth Hall`,
+					value: `Perth`,
 				})
 			);
 
@@ -59,7 +59,6 @@ module.exports = {
 			.setColor('#71368A')
 			.setTitle('🏠 Selecting Res...')
 			.setDescription('Please select your residence from the dropdown below!')
-			.addFields({})
 			.setFooter({ text: `Baymax II • 2022` });
 
 		await interaction.reply({ embeds: [embed], components: [new ActionRowBuilder().addComponents(menu)], ephemeral: true });

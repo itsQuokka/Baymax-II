@@ -33,6 +33,9 @@ module.exports = {
 			}
 		}
 
+		let _spacer = await interaction.guild.roles.cache.find((r) => r.id === '1001367632236265522');
+		await interaction.member.roles.add(_spacer);
+
 		await interaction.member.roles.add(_r);
 		await interaction.update({ embeds: [embed], components: [] });
 	},
@@ -41,22 +44,22 @@ module.exports = {
 const roles = [
 	{
 		name: '2023',
-		id: '',
+		id: '1001364750736838706',
 	},
 	{
 		name: '2024',
-		id: '',
+		id: '1001364852717146143',
 	},
 	{
 		name: '2025',
-		id: '',
+		id: '1001364852717146143',
 	},
 	{
 		name: '2026',
-		id: '',
+		id: '1001364750736838706',
 	},
 	{
 		name: 'Alumni',
-		id: '',
+		id: '1001364948582142002',
 	},
 ];
